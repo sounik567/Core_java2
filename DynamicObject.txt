@@ -1,0 +1,25 @@
+class Test
+{
+	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException
+	{
+		String className = args[0];
+		Class c=Class.forName(className);				
+		A a =(A)c.newInstance();
+		a.m1();
+		
+	}
+}
+class A
+{
+	public void m1()
+	{
+		System.out.println("Sourv");
+	}
+}
+class B
+{
+	public void m1()
+	{
+		System.out.println("Ajit");
+	}
+}
